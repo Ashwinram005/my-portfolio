@@ -2,25 +2,46 @@ import projectsData from "../assets/projectsData"; // adjust the path accordingl
 
 const Projects = () => {
   return (
-    <div className="bg-gray-200 py-16 px-6 sm:px-12 md:px-24">
+    <div className="bg-gray-100 py-16 px-6 sm:px-12 md:px-24">
       <div className="max-w-screen-xl mx-auto">
-        <h2 className="text-4xl font-bold text-indigo-700 mb-8 text-center">My Projects</h2>
+        <h2 className="text-4xl font-extrabold text-indigo-800 mb-12 text-center">
+          My Projects
+        </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
           {projectsData.map((project) => (
-            <div key={project.id} className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
-              <h3 className="text-xl font-semibold text-indigo-700 mb-4">{project.title}</h3>
-              <p className="text-gray-600 mb-4">{project.description}</p>
-              {project.link && (
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-indigo-700 hover:text-indigo-800"
-                >
-                  View Project
-                </a>
-              )}
+            <div
+              key={project.id}
+              className="bg-white border border-gray-300 p-6 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition duration-300 flex flex-col"
+            >
+              <h3 className="text-2xl font-bold text-indigo-700 mb-4 text-center">
+                {project.title}
+              </h3>
+              <p className="text-gray-700 leading-relaxed text-center mb-6">
+                {project.description}
+              </p>
+              <div className="flex justify-center space-x-4 mt-auto">
+                {project.link && (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-indigo-600 text-white px-4 py-2 rounded-full font-medium hover:bg-indigo-700 transition duration-300"
+                  >
+                    View Project
+                  </a>
+                )}
+                {project.githublink && (
+                  <a
+                    href={project.githublink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-gray-700 text-white px-4 py-2 rounded-full font-medium hover:bg-gray-800 transition duration-300"
+                  >
+                    GitHub
+                  </a>
+                )}
+              </div>
             </div>
           ))}
         </div>
