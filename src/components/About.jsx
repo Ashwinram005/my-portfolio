@@ -28,7 +28,6 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="mt-16 mb-0 border-t-2 border-gray-300"></div>
     </div>
   );
 };
