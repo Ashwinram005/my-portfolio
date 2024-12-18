@@ -1,4 +1,3 @@
-import { HashRouter } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -10,28 +9,25 @@ import Contact from "./components/Contact";
 const App = () => {
   return (
     <div>
-      <HashRouter>
         <Navbar />
-        {/* Sections with corresponding IDs */}
-        <div id="hero">
+        <div id="hero" className="">
           <Hero />
         </div>
-        <div id="about">
+        <div id="about" className="">
           <About />
         </div>
-        <div id="projects">
+        <div id="projects" className="">
           <Projects />
         </div>
-        <div id="skills">
+        <div id="skills" className="">
           <Skills />
         </div>
-        <div id="resume">
+        <div id="resume" className="">
           <Resume />
         </div>
-        <div id="contact">
+        <div id="contact" className="">
           <Contact />
         </div>
-      </HashRouter>
     </div>
   );
 };
