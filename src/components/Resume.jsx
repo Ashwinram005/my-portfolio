@@ -1,33 +1,21 @@
 import { FaFilePdf } from "react-icons/fa";  // Import the PDF icon from react-icons
-import resume from "../assets/resume.pdf";
+import resume from "../assets/Ashwinram M_Resume.pdf"; // Correct the path to your resume
 
 const Resume = () => {
   return (
-    <div className="bg-gray-200 py-16 px-6 sm:px-12 md:px-24">
-      <div className="max-w-screen-xl mx-auto text-center">
-        {/* Section Title */}
-        <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-6">
-          My Resume
-        </h2> 
-
-        {/* Description */}
-        <p className="text-lg text-gray-700 mb-6">
-          Click the icon below to view or download my resume. I am always open to new opportunities!
-        </p>
-
-        {/* Resume Icon with Hover Effect */}
-        <div className="flex justify-center items-center space-x-4">
-          <a
-            href={resume}  // Replace with the correct path to your resume PDF
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center w-16 h-16 rounded-full bg-red-600 text-white hover:bg-red-800 transition-colors transform hover:scale-110 shadow-lg"
-            aria-label="View or Download Resume"
-          >
-            <FaFilePdf className="text-2xl" />
-          </a>
-        </div>
-      </div>
+    <div className="py-16 px-6 sm:px-12 md:px-24 flex justify-center">
+      {/* Simple Download Resume Button */}
+      <a
+        href={resume}  // Correct path to resume PDF
+        download="Ashwinram_M_Resume" // Automatically triggers a download with a name
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center px-6 py-3 bg-white text-black border-2 border-black rounded-lg text-lg font-medium shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl"
+        aria-label="Download Resume"
+      >
+        <FaFilePdf className="mr-2" /> {/* PDF icon with some space */}
+        Download Resume
+      </a>
     </div>
   );
 };
