@@ -2,7 +2,7 @@ import projectsData from "../assets/projectsData"; // adjust the path accordingl
 
 const Projects = () => {
   return (
-    <div className="bg-gray-50 py-16 px-6 sm:px-12 md:px-24">
+    <div className="bg-gray-100 py-16 px-6 sm:px-12 md:px-24">
       <div className="max-w-screen-xl mx-auto">
         <h2 className="text-4xl font-extrabold text-gray-800 mb-12 text-center">
           My Projects

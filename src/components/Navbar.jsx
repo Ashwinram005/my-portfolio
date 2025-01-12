@@ -1,15 +1,13 @@
-import { useState } from "react";
-
 const Navbar = () => {
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-white p-4 shadow-lg z-50">
+    <nav className="fixed top-0 left-0 right-0 bg-white p-3 sm:p-4 shadow-lg z-50">
       <div className="flex justify-center items-center max-w-screen-xl mx-auto">
         {/* Menu (Responsive Row without Scrolling) */}
-        <ul className="flex space-x-6 sm:space-x-4 lg:space-x-8">
+        <ul className="flex space-x-4 sm:space-x-6 lg:space-x-8">
           <li>
             <a
               href="#hero"
-              className="text-gray-800 text-sm sm:text-base lg:text-lg hover:text-black transition duration-300"
+              className="text-gray-800 text-xs sm:text-sm lg:text-lg hover:text-black transition duration-300"
             >
               Home
             </a>
@@ -17,7 +15,7 @@ const Navbar = () => {
           <li>
             <a
               href="#about"
-              className="text-gray-800 text-sm sm:text-base lg:text-lg hover:text-black transition duration-300"
+              className="text-gray-800 text-xs sm:text-sm lg:text-lg hover:text-black transition duration-300"
             >
               About Me
             </a>
@@ -25,7 +23,7 @@ const Navbar = () => {
           <li>
             <a
               href="#projects"
-              className="text-gray-800 text-sm sm:text-base lg:text-lg hover:text-black transition duration-300"
+              className="text-gray-800 text-xs sm:text-sm lg:text-lg hover:text-black transition duration-300"
             >
               Projects
             </a>
@@ -33,7 +31,7 @@ const Navbar = () => {
           <li>
             <a
               href="#skills"
-              className="text-gray-800 text-sm sm:text-base lg:text-lg hover:text-black transition duration-300"
+              className="text-gray-800 text-xs sm:text-sm lg:text-lg hover:text-black transition duration-300"
             >
               Skills
             </a>
@@ -41,7 +39,7 @@ const Navbar = () => {
           <li>
             <a
               href="#resume"
-              className="text-gray-800 text-sm sm:text-base lg:text-lg hover:text-black transition duration-300"
+              className="text-gray-800 text-xs sm:text-sm lg:text-lg hover:text-black transition duration-300"
             >
               Resume
             </a>
@@ -49,7 +47,7 @@ const Navbar = () => {
           <li>
             <a
               href="#contact"
-              className="text-gray-800 text-sm sm:text-base lg:text-lg hover:text-black transition duration-300"
+              className="text-gray-800 text-xs sm:text-sm lg:text-lg hover:text-black transition duration-300"
             >
               Contact
             </a>

@@ -3,7 +3,7 @@ import resume from "../assets/Ashwinram M_Resume.pdf"; // Correct the path to yo
 
 const Resume = () => {
   return (
-    <div className="py-16 px-6 sm:px-12 md:px-24 flex justify-center">
+    <div className="bg-gray-100 py-16 px-6 sm:px-12 md:px-24 flex justify-center">
       {/* Simple Download Resume Button */}
       <a
         href={resume}  // Correct path to resume PDF

@@ -1,5 +1,4 @@
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";  // Import professional icons
-import { SiLeetcode } from "react-icons/si";
 
 const Contact = () => {
   return (
