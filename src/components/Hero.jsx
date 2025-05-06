@@ -5,7 +5,7 @@ const Hero = () => {
       <h1 className="text-5xl sm:text-6xl md:text-7xl font-medium tracking-tight mb-4 text-gray-800">
         Ashwinram M
       </h1>
-      <p className="text-lg sm:text-xl font-medium mb-6 text-gray-800">Web Developer</p>
+      <p className="text-lg sm:text-xl font-medium mb-6 text-gray-800">Full Stack Developer</p>
       
       {/* Get in Touch Button */}
       <div>

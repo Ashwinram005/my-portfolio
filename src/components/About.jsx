@@ -19,8 +19,8 @@ const About = () => {
             About Me
           </h2>
           <p className="text-base md:text-lg text-gray-700 mb-6 leading-relaxed">
-            Hello! I'm Ashwinram M, a passionate Web Developer with a focus on creating dynamic and interactive user experiences.
-            With a strong foundation in web technologies like HTML, CSS, JavaScript and React, I strive to build applications that are not only visually appealing but also highly functional.
+            Hello! I'm Ashwinram M, a passionate Full Stack Developer with a focus on creating dynamic and interactive user experiences.
+            With a strong foundation in web technologies like HTML, CSS, JavaScript ,Express and React, I strive to build applications that are not only visually appealing but also highly functional.
           </p>
           <p className="text-base md:text-lg text-gray-700 mb-8 leading-relaxed">
             I enjoy solving complex problems, learning new technologies, and collaborating with other talented professionals to create innovative solutions.

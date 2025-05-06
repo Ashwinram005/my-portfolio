@@ -1,5 +1,5 @@
 import { FaFilePdf } from "react-icons/fa";  // Import the PDF icon from react-icons
-import resume from "../assets/Ashwinram M_Resume.pdf"; // Correct the path to your resume
+import resume from "../assets/Ashwinram M FINAL RESUME.pdf"; // Correct the path to your resume
 
 const Resume = () => {
   return (
